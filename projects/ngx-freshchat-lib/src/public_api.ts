@@ -4,3 +4,4 @@
 
 export * from './lib/ngx-freshchat-lib.service';
 export * from './lib/ngx-freshchat-lib.module';
+export * from './lib/models';

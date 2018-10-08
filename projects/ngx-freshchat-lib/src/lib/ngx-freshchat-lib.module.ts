@@ -8,4 +8,4 @@ import { NgxFreshChatService } from './ngx-freshchat-lib.service';
   declarations: [],
   exports: []
 })
-export class NgxFreshchatLibModule { }
+export class NgxFreshChatModule { }
