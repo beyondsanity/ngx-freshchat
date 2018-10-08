@@ -33,7 +33,7 @@ ngOnInit() {
 
 ```
 
-The library tries to mimic all their properties and method names, but I made the methods respond with observables in order to allow checking the status of your requests.
+The library tries to mimic all the original properties and method names, but I made the methods respond with observables in order to allow checking the status of your requests.
 For more info please refer to the [official documentation](https://developers.freshchat.com/).
 
 NB: The methods from the "user" object are mapped directly in the service. (i.e. ```window.fcWidget.user.setProperties()``` from the js is mapped as ```this.chat.setUserProperties()``` )
