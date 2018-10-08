@@ -15,8 +15,8 @@ Import the library inside your desired module:
         ...
 ```
 
-##Usage
-The library can be used as a service. Just import it and launch the init command:
+## Usage
+Import the service and launch the init command:
 
 ```
 constructor(private chat: NgxFreshChatService) {}
@@ -33,10 +33,10 @@ ngOnInit() {
 
 ```
 
-For more info please refer to the [official documentation](https://developers.freshchat.com/).
 The library tries to mimic all their properties and method names, but I made the methods respond with observables in order to allow checking the status of your requests.
+For more info please refer to the [official documentation](https://developers.freshchat.com/).
 
-NB: The methods from the "user" object are mapped directly in the service. (i.e. window.fcWidget.user.setProperties() from the js is mapped as this.chat.setUserProperties())
+NB: The methods from the "user" object are mapped directly in the service. (i.e. ```window.fcWidget.user.setProperties()``` from the js is mapped as ```this.chat.setUserProperties()``` )
 
 
 Contributions are welcome.
