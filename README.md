@@ -3,8 +3,9 @@
 Angular Wrapper for Freshchat js library. It requires Angular 6.
 
 ## Installation
-run ```npm install ngx-freshchat```
-Import the library inside your desired module
+Run ```npm install ngx-freshchat```.
+
+Import the library inside your desired module:
 
 ```
 @NgModule({
