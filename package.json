@@ -1,6 +1,6 @@
 {
   "name": "ngx-freshchat",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,17 +10,17 @@
     "e2e": "ng e2e"
   },
   "dependencies": {
-    "@angular/common": "^6.0.0",
-    "@angular/core": "^6.0.0",
-    "@angular/compiler": "^6.0.0",
-    "@angular/animations": "^6.0.0",
-    "@angular/forms": "^6.0.0",
-    "@angular/http": "^6.0.0",
-    "@angular/platform-browser": "^6.0.0",
-    "@angular/platform-browser-dynamic": "^6.0.0",
-    "@angular/router": "^6.0.0",
+    "@angular/common": ">=6.0.0",
+    "@angular/core": ">=6.0.0",
+    "@angular/compiler": ">=6.0.0",
+    "@angular/animations": ">=6.0.0",
+    "@angular/forms": ">=6.0.0",
+    "@angular/http": ">=6.0.0",
+    "@angular/platform-browser": ">=6.0.0",
+    "@angular/platform-browser-dynamic": ">=6.0.0",
+    "@angular/router": ">=6.0.0",
     "core-js": "^2.5.4",
-    "rxjs": "^6.0.0",
+    "rxjs": ">=6.0.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
