@@ -1,8 +1,8 @@
 {
-  "name": "ngx-freshchat-lib",
-  "version": "0.0.1",
+  "name": "ngx-freshchat",
+  "version": "0.0.3",
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0 || ^7.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0 || ^7.0.0"
   }
 }
