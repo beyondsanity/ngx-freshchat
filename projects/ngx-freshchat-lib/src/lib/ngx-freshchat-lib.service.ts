@@ -21,6 +21,12 @@ export class NgxFreshChatService {
 
   constructor() {}
 
+  /**
+   * Initializes the Freshchat Widget.
+   * @param data The Freshchat init object.
+   * @returns An Observable which emits when the widget has loaded.
+   * @author beyondsanity
+   */
   init(data: FCInitObject): Observable<any> {
     return this.loadScript('https://wchat.freshchat.com/js/widget.js')
       .pipe(
@@ -36,6 +42,11 @@ export class NgxFreshChatService {
     });
   }
 
+  /**
+   * Gets the current Freshchat user.
+   * @returns An Observable which emits with the current user.
+   * @author beyondsanity
+   */
   getUser(): Observable<any> {
     return Observable.create( observer => {
       this.getWidget().user.get(
@@ -50,6 +61,12 @@ export class NgxFreshChatService {
     });
   }
 
+  /**
+   * Sets the current Freshchat users properties
+   * @param user The new properties for the user.
+   * @returns An Observable which emits after the user has been updated.
+   * @author beyondsanity
+   */
   setUserProperties(user: FCUser): Observable<any> {
     return Observable.create( observer => {
       this.getWidget().user.setProperties(user,
@@ -64,10 +81,22 @@ export class NgxFreshChatService {
     });
   }
 
+  /**
+   * Updates the current Freshchat user.
+   * @param user The new properties to update the user with.
+   * @returns An Observable which emits when the user has been updated.
+   * @author beyondsanity
+   */
   updateUser(user: FCUser) {
     this.getWidget().user.update(user);
   }
 
+
+  /**
+   * Clears the current Freshchat user.
+   * @returns An Observable which emits when the user has been cleared.
+   * @author beyondsanity
+   */
   clearUser(): Observable<any> {
     return Observable.create( observer => {
       this.getWidget().user.clear(
@@ -82,22 +111,47 @@ export class NgxFreshChatService {
     });
   }
 
+  /**
+   * Tracks an event against the current user.
+   * @param eventName The event name to track.
+   * @param payload Optional - The payload to pass to the event.
+   * @author beyondsanity
+   */
   track(eventName: string, payload?: any) {
     this.getWidget().track(eventName, payload);
   }
 
+  /**
+   * Sets the tags against the current user
+   * @param tags An array of tags to set.
+   * @author beyondsanity
+   */
   setTags(tags: [string]) {
     this.getWidget().setTags(tags);
   }
 
+  /**
+   * Sets the locale for the current user
+   * @param locale The locale.
+   * @author beyondsanity
+   */
   setLocale(locale: string) {
     this.getWidget().setLocale(locale);
   }
 
+  /**
+   * Destroys the current Freshchat widget.
+   * @author beyondsanity
+   */
   destroy() {
     this.getWidget().destroy();
   }
 
+  /**
+   * Checks if the widget has been initialized
+   * @returns A boolean of if the widget has been initialized
+   * @author beyondsanity
+   */
   isInitialized(): boolean {
     return this.getWidget().isInitialized();
   }
