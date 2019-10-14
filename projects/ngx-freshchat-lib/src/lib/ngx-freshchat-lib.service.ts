@@ -36,7 +36,7 @@ export class NgxFreshChatService {
   }
 
   private initWidget(data): Observable<any> {
-    return Observable.create( observer => {
+    return new Observable( observer => {
       this.getWidget().on('widget:loaded', res => observer.next(res) );
       this.getWidget().init(data);
     });
@@ -48,7 +48,7 @@ export class NgxFreshChatService {
    * @author beyondsanity
    */
   getUser(): Observable<any> {
-    return Observable.create( observer => {
+    return new Observable( observer => {
       this.getWidget().user.get(
         res => {
           if (res.status !== 200) {
@@ -68,7 +68,7 @@ export class NgxFreshChatService {
    * @author beyondsanity
    */
   setUserProperties(user: FCUser): Observable<any> {
-    return Observable.create( observer => {
+    return new Observable( observer => {
       this.getWidget().user.setProperties(user,
         res => {
           if (res.status !== 200) {
@@ -98,7 +98,7 @@ export class NgxFreshChatService {
    * @author beyondsanity
    */
   clearUser(): Observable<any> {
-    return Observable.create( observer => {
+    return new Observable( observer => {
       this.getWidget().user.clear(
         res => {
           if (res.status !== 200) {
