@@ -1,7 +1,6 @@
 # NgxFreshchat
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
-Angular Wrapper for [Freshchat](https://www.freshworks.com/live-chat-software/) js library. It requires Angular 6.
+Angular Wrapper for [Freshchat](https://www.freshworks.com/live-chat-software/) js library. It requires Angular 6 or above.
 
 ## Installation
 Run ```npm install ngx-freshchat```.
@@ -41,7 +40,6 @@ NB: The methods from the "user" object are mapped directly in the service. (i.e.
 
 
 Contributions are welcome.
-
 
 ## Contributors ✨
 
