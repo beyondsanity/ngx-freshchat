@@ -58,10 +58,10 @@ export class NgxFreshChatService {
       });
     });
   }
-  
+
   /**
    * Gets the current Freshchat user.
-   * @returns An Observable which emits with the current user.
+   * @returns An Observable which emits the current user.
    * @author beyondsanity
    */
   getUser(): Observable<any> {
@@ -101,10 +101,9 @@ export class NgxFreshChatService {
   /**
    * Updates the current Freshchat user.
    * @param user The new properties to update the user with.
-   * @returns An Observable which emits when the user has been updated.
    * @author beyondsanity
    */
-  updateUser(user: FCUser) {
+  updateUser(user: FCUser): void {
     this.getWidget().user.update(user);
   }
 
@@ -134,7 +133,7 @@ export class NgxFreshChatService {
    * @param payload Optional - The payload to pass to the event.
    * @author beyondsanity
    */
-  track(eventName: string, payload?: any) {
+  track(eventName: string, payload?: any): void {
     this.getWidget().track(eventName, payload);
   }
 
@@ -143,7 +142,7 @@ export class NgxFreshChatService {
    * @param tags An array of tags to set.
    * @author beyondsanity
    */
-  setTags(tags: [string]) {
+  setTags(tags: [string]): void {
     this.getWidget().setTags(tags);
   }
 
@@ -152,7 +151,7 @@ export class NgxFreshChatService {
    * @param locale The locale.
    * @author beyondsanity
    */
-  setLocale(locale: string) {
+  setLocale(locale: string): void {
     this.getWidget().setLocale(locale);
   }
 
@@ -160,7 +159,7 @@ export class NgxFreshChatService {
    * Destroys the current Freshchat widget.
    * @author beyondsanity
    */
-  destroy() {
+  destroy(): void {
     this.getWidget().destroy();
   }
 
