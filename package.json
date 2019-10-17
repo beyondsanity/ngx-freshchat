@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-lib": "ng build ngx-freshchat-lib",
-    "packlib": "npm run build-lib && cd dist/ngx-freshchat-lib && npm pack"
+    "pack-lib": "npm run build-lib && cd dist/ngx-freshchat-lib && npm pack"
   },
   "dependencies": {
     "@angular/animations": ">=6.0.0",
