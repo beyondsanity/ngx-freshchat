@@ -43,6 +43,23 @@ export class NgxFreshChatService {
   }
 
   /**
+   * Used to capture the user creation event. This can be used to save the restoreID.
+   * @returns An Observable which emits when a user is created.
+   * @author Will Poulson
+   */
+  onUserCreate(): Observable<any> {
+    return new Observable((observer) => {
+      this.getWidget().on('user:created', (res) => {
+        if (res.status !== 200) {
+          observer.error(res.status);
+        } else {
+          observer.next(res.data || null);
+        }
+      });
+    });
+  }
+  
+  /**
    * Gets the current Freshchat user.
    * @returns An Observable which emits with the current user.
    * @author beyondsanity
