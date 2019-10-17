@@ -1,5 +1,5 @@
 # NgxFreshchat
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
 Angular Wrapper for [Freshchat](https://www.freshworks.com/live-chat-software/) js library. It requires Angular 6.
 
@@ -53,6 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://www.nearit.com/"><img src="https://avatars3.githubusercontent.com/u/7868362?v=4" width="100px;" alt="Claudio Suardi"/><br /><sub><b>Claudio Suardi</b></sub></a><br /><a href="https://github.com/beyondsanity/ngx-freshchat/commits?author=beyondsanity" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.willpoulson.co.uk"><img src="https://avatars0.githubusercontent.com/u/12980659?v=4" width="100px;" alt="Will Poulson"/><br /><sub><b>Will Poulson</b></sub></a><br /><a href="https://github.com/beyondsanity/ngx-freshchat/commits?author=WillPoulson" title="Code">💻</a></td>
   </tr>
 </table>
 
