@@ -1,0 +1,24 @@
+{
+  "projectName": "ngx-freshchat",
+  "projectOwner": "beyondsanity",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "beyondsanity",
+      "name": "Claudio Suardi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7868362?v=4",
+      "profile": "https://www.nearit.com/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
