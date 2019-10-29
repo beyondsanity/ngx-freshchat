@@ -6,6 +6,9 @@ import { first, flatMap } from 'rxjs/operators';
 interface FCWidget {
   init;
   user;
+  isOpen;
+  open;
+  close;
   track;
   setTags;
   setLocale;
@@ -125,6 +128,33 @@ export class NgxFreshChatService {
         }
       );
     });
+  }
+
+  /**
+   * Checks whether the Freshchat Widget is open.
+   * @author beyondsanity
+   */
+  isOpen(): boolean {
+    return this.getWidget().isOpen();
+  }
+
+  /**
+   * Opens the Freshchat Widget.
+   *
+   * @param payload Optional - parameters including channel id or name.
+   * The replyText parameter can be used to set up custom text in the text area of the widget.
+   * @author beyondsanity
+   */
+  open(payload: { name?: string, channelId?: string, replyText?: string }): void {
+    this.getWidget().open(payload);
+  }
+
+  /**
+   * Closes the Freshchat Widget.
+   * @author beyondsanity
+   */
+  close(): void {
+    this.getWidget().close();
   }
 
   /**
