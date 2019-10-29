@@ -145,7 +145,7 @@ export class NgxFreshChatService {
    * The replyText parameter can be used to set up custom text in the text area of the widget.
    * @author beyondsanity
    */
-  open(payload: { name?: string, channelId?: string, replyText?: string }): void {
+  open(payload?: { name?: string, channelId?: string, replyText?: string }): void {
     this.getWidget().open(payload);
   }
 
