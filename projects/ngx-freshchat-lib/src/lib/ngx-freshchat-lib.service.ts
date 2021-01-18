@@ -63,6 +63,19 @@ export class NgxFreshChatService {
   }
 
   /**
+   * To check if there are unread messages
+   * @returns An Observable which emits the count unread messages.
+   * @author wutkaru
+   */
+  unreadCount(): Observable<any> {
+    return new Observable((observer) => {
+      this.getWidget().on('unreadCount:notify', (res) => {
+          observer.next(res.count || null);
+      });
+    });
+  }
+
+  /**
    * Gets the current Freshchat user.
    * @returns An Observable which emits the current user.
    * @author beyondsanity
